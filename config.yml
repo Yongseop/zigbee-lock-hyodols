@@ -1,6 +1,6 @@
-name: 'Zigbee Lock'
-packageKey: 'zigbee-lock'
+name: 'Zigbee Lock (Hyodols)'
+packageKey: 'zigbee-lock-hyodols'
 permissions:
   zigbee: {}
-description: "SmartThings driver for Zigbee lock devices"
+description: "SmartThings driver for Zigbee lock devices modified by Hyodols"
 vendorSupportInformation: "https://support.smartthings.com"
