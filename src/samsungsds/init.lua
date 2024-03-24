@@ -30,6 +30,8 @@ local function handle_lock_state(driver, device, value, zb_rx)
     device:emit_event(Lock.lock.locked())
   elseif value.value == DoorLock.attributes.LockState.UNLOCKED then
     device:emit_event(Lock.lock.unlocked())
+  elseif value.value == DoorLock.attributes.LockState.NOT_FULLY_LOCKED then
+    device:emit_event(Lock.lock.unknown())
   -- else
   --   device:emit_event(Lock.lock.unknown())
   end
